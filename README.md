@@ -1,3 +1,8 @@
+# use node 22.14.0
+
+# Tutorial : https://angular.dev/guide/components/content-projection
+
+
 # LearnAngular
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.

@@ -1,0 +1,21 @@
+<div class="outer-div">
+    <p>{{componentInfo}}</p>
+    <p>{{signalComponentInfo()}}</p>
+    
+    
+     <!-- check track here -->
+    @for(user of userList; track user.id){   
+        <app-user 
+        (userMouseLeave)="onUserMouseLeave($event)" 
+        (userSelected)="onSelectUser($event)" 
+        [name]="user.name"
+        [city]="user.city"
+        ></app-user>
+    }
+    
+    @if (selectedUser() != "") {
+        <p>Selected user is : {{selectedUser()}}</p>
+    }
+</div>
+
+
