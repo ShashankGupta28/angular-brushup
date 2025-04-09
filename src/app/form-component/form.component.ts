@@ -17,7 +17,7 @@ export class FormComponent {
   city = "";          // 2 way bindind
 
   onClickHandler(){
-    console.log("buttomClicked");
+    console.log("button Clicked");
     this.userService.serviceFunction();
   }
 

@@ -14,7 +14,7 @@ export class UserListComponent {
 
   selectedUser = signal("");
 
-  signalComponentInfo = signal("This is a message usingSignal")
+  signalComponentInfo = signal("This is a message using Signal")
 
   onSelectUser(name:string) { // this is getting value from user component
       this.selectedUser.set(name);
