@@ -1,10 +1,10 @@
-<main class="main">
-  <div class="content">
-    <div class="left-side">
-      <h1>Hello, {{ title() }}</h1> <!--This is the way to use signal-->
-      <app-user-list [userList]="userData"></app-user-list>
-      <app-module></app-module>
-    </div>
-  </div>
-</main>
+<h1>Angular Router App</h1>
+<nav>
+  <ul>
+    <li><a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">home</a></li>
+    <li><a routerLink="/first-page" routerLinkActive="active" ariaCurrentWhenActive="page">First Page</a></li>
+    <li><a routerLink="/second-page" routerLinkActive="active" ariaCurrentWhenActive="page">Second Page</a></li>
+  </ul>
+</nav>
 <router-outlet />
+
